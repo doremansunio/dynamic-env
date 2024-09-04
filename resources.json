@@ -1,0 +1,14 @@
+[
+  {
+    "name": "project",
+    "type": "rafay_project"
+  },
+  {
+    "name": "workspace_group",
+    "type": "rafay_group"
+  },
+  {
+    "name": "workspace_association",
+    "type": "rafay_groupassociation"
+  }
+]

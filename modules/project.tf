@@ -1,4 +1,9 @@
-resource "rafay_project" "example" {
-  name        = var.project_name
-  description = var.project_description
+resource "rafay_project" "tfdemoproject1" {
+  metadata {
+    name        = "tfdemoproject1"
+    description = "terraform project"
+  }
+  spec {
+    default = false
+  }
 }

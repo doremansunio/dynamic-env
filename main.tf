@@ -1,9 +1,6 @@
 # variables.tf
 variable "selected_resources" {
-  type = list(object({
-    name = string
-    type = string
-  }))
+  type = list(string)
 }
 
 # main.tf

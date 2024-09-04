@@ -25,8 +25,8 @@ dynamic "module" "resource_modules" {
   for_each = var.selected_resources
 
   content {
-    name = each.value.name
-    source = "./modules/${each.value.type}"
+    name = each.value
+    source = "./modules/${each.value}.tf"
 
     # Pass configuration based on resource type
     # This might involve accessing resource_config

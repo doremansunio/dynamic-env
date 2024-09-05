@@ -21,7 +21,7 @@ variable "resource_config" {
   }))
 }
 
-module "resource_modules" {
+resource "module" "resource_modules" {
   for_each = var.selected_resources
 
   content {

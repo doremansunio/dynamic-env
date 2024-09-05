@@ -21,7 +21,7 @@ variable "resource_config" {
   }))
 }
 
-dymanic module "resource_modules" {
+dymanic "resource_modules" {
   for_each = var.selected_resources
 
   content {

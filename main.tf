@@ -21,15 +21,14 @@ variable "resource_config" {
   }))
 }
 
-dymanic "resource_modules" {
-  for_each = var.selected_resources
 
-  content {
-    name = each.value.name
-    source = "./modules/${each.value.type}"
+for_each = var.selected_resources
 
-    # Pass configuration based on resource type
-    # This might involve accessing resource_config
-    ${each.value.type} = var.resource_config[each.value.type]
-  }
+content {
+  name = each.value.name
+  source = "./modules/${each.value.type}"
+
+  # Pass configuration based on resource type
+  # This might involve accessing resource_config
+  ${each.value.type} = var.resource_config[each.value.type]
 }

@@ -21,7 +21,7 @@ variable "resource_config" {
   }))
 }
 
-dynamic "module" {
+dynamic "module" "resource_modules" {
   for_each = var.selected_resources
 
   content {

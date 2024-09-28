@@ -17,3 +17,7 @@ provider "rafay" {
 
 provider "github" {    
 }
+
+provider "aws" {
+  region = "ap-south-1"
+}

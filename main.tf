@@ -1,6 +1,6 @@
 # Terraform configuration
 
 
-resource "aws_s3_bucket" "s3_buck_1" {  
+resource "aws_s3_bucket" "s3buck1" {  
   bucket = "test-bucket"
 }
